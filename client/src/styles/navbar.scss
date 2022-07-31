@@ -1,0 +1,26 @@
+.navbarMain{
+    font-size: 1.3rem;
+    background-color: #0871b4;
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+}
+
+.name span{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.items{
+    list-style: none;
+}
+
+.items li{
+    cursor: pointer;
+}
+
+// .items li:hover{
+//     color: #064369;
+// }

@@ -1,0 +1,2 @@
+// Obtener paciente y cita
+SELECT * FROM pacientes INNER JOIN citas ON pacientes.idpaciente = citas.idpaciente
