@@ -35,7 +35,7 @@ routes.post('/addpaciente', (req, res)=>{
         conn.query('INSERT INTO pacientes set ?', [req.body], (err, rows)=>{
             if(err) return res.send(err)
 
-            res.send('paciente añadido correctamente!')
+            res.send('paciente añadido correctamente!') 
         })
     })
 })

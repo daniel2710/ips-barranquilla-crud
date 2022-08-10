@@ -30,5 +30,5 @@ app.use('/ipsbarranquilla', routes);
 
 // server running -----------------------------------
 app.listen(app.get('port'), ()=>{
-    console.log('server running on port', app.get('port'));
+    console.log('server running on port', app.get('port'), "✔️");
 })

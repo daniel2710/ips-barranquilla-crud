@@ -132,7 +132,7 @@ const HistorialCitas = () => {
             </div>
 
         <div className='mt-4 mb-4'>
-            <h4>Seguimiento</h4>
+            <h4>Historial</h4>
         </div>
 
         <div className='mt-4'>
