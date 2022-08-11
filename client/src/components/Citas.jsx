@@ -59,7 +59,7 @@ const Citas = () => {
             <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
         </div>
         <div className='table-div mt-4'>
-        {data.length > 0 ? <table id='table' className='table scroll'>
+        {data.length > 0 ? <table id='table' className='table table-striped table scroll'>
                     <thead>
                         <tr className=''>
                             <th>Id</th>

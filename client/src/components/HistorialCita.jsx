@@ -95,7 +95,7 @@ const HistorialCitas = () => {
         </div>
 
         <div className='mt-4'>
-        {data.length > 0 ? <table id='table' className='table'>
+        {data.length > 0 ? <table id='table' className='table table-striped'>
                     <thead>
                         <tr className=''>
                             <th>Id</th>
@@ -136,7 +136,7 @@ const HistorialCitas = () => {
         </div>
 
         <div className='mt-4'>
-        {data.length > 0 ? <table id='table' className='table'>
+        {data.length > 0 ? <table id='table' className='table table-striped'>
                     <thead>
                         <tr className=''>
                             <th>Id</th>

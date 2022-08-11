@@ -239,7 +239,7 @@ const Pacientes = () => {
             </div>
         </div>
         <div className='table-div mt-4'>
-        {data.length > 0 ? <table id='table' className='table'>
+        {data.length > 0 ? <table id='table' className='table table-striped'>
                     <thead>
                         <tr className=''>
                             <th>Id</th>

@@ -12,3 +12,12 @@
     height: 400px;
     overflow:auto !important;
 }
+
+.table-div::-webkit-scrollbar{
+    width: 7px;
+}
+
+.table-div::-webkit-scrollbar-thumb{
+    background-color: #033581;
+    border-radius: 10px;
+}
