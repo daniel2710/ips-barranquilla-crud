@@ -14,8 +14,9 @@ import '../styles/citas.scss';
 
 
 // endpoint para obtener todos los datos
-const getAllCitas = "http://localhost:9000/ipsbarranquilla/citas";
+//const getAllCitas = "http://localhost:9000/ipsbarranquilla/citas";
 
+const getAllCitas = "http://localhost:8080/crud/citas/allcitas"
 
 const Citas = () => {
 
@@ -30,6 +31,7 @@ const Citas = () => {
   // funcion para obtener el registro al que le queremos ver los detalles
   const registroSeleccionado=(cita)=>{
     setContextData(cita)
+    console.log(cita.idpaciente.idpaciente);
     navigate('/historial/citas')
   };
 

@@ -37,7 +37,7 @@ CREATE TABLE `citas` (
   PRIMARY KEY (`idcita`),
   KEY `id_pacientes_idx` (`idpaciente`),
   CONSTRAINT `id_pacientes` FOREIGN KEY (`idpaciente`) REFERENCES `pacientes` (`idpaciente`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -46,7 +46,7 @@ CREATE TABLE `citas` (
 
 LOCK TABLES `citas` WRITE;
 /*!40000 ALTER TABLE `citas` DISABLE KEYS */;
-INSERT INTO `citas` VALUES (26,'2022-08-09','lombardo humberto lopez','clinica del sur','sede centro','presencial','pendiente','no','ninguna',24,'8:30am'),(27,'2022-10-13','jose perez agustiniano','clinica porto azul','sede via salgar','presencial','pendiente','no','ninguna',24,'1:30pm'),(30,'2022-08-09','prueba','prueba','prueba','presencial','pendiente','si','ninguna',24,'prueba'),(31,'2022-08-09','cita de prueba','cita de prueba','cita de prueba','presencial','pendiente','si','ninguna',31,'cita de prueba'),(32,'2022-08-09','cita 2','cita 2','cita 2','presencial','pendiente','no','ninguna',31,'cita 2'),(33,'2022-08-11','gonzalo de feliche','clinica del atlantico','sede via salgar','presencial','pendiente','no','ninguna',24,'2:30pm'),(34,'2022-08-11','alvaro morata','clinica san jorge','sede centro','presencial','pendiente','no','ninguna',26,'5:30am'),(35,'2022-08-11','gustavo bolaños','paso del pueblito','barrio pueblito','presencial','pendiente','no','ninguna',26,'2:30pm');
+INSERT INTO `citas` VALUES (26,'2022-08-09','lombardo humberto lopez','clinica del sur','sede centro','presencial','pendiente','no','ninguna',24,'8:30am'),(27,'2022-10-13','jose perez agustiniano','clinica porto azul','sede via salgar','presencial','pendiente','no','ninguna',24,'1:30pm'),(30,'2022-08-09','prueba','prueba','prueba','presencial','pendiente','si','ninguna',24,'prueba'),(31,'2022-08-09','cita de prueba','cita de prueba','cita de prueba','presencial','pendiente','si','ninguna',31,'cita de prueba'),(32,'2022-08-09','cita 2','cita 2','cita 2','presencial','pendiente','no','ninguna',31,'cita 2'),(33,'2022-08-11','gonzalo de feliche','clinica del atlantico','sede via salgar','presencial','pendiente','no','ninguna',24,'2:30pm'),(34,'2022-08-11','alvaro morata','clinica san jorge','sede centro','presencial','pendiente','no','ninguna',26,'5:30am'),(35,'2022-08-11','gustavo bolaños','paso del pueblito','barrio pueblito','presencial','pendiente','no','ninguna',26,'2:30pm'),(37,'2022-08-11','prueba spring','prueba spring','prueba spring','prueba spring','prueba spring','prueba spring','prueba spring',24,'prueba spring'),(38,'2022-08-11','prueba spring','prueba spring','prueba spring','prueba spring','prueba spring','prueba spring','prueba spring',24,'prueba spring');
 /*!40000 ALTER TABLE `citas` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -66,7 +66,7 @@ CREATE TABLE `pacientes` (
   `fecha_nac` varchar(45) NOT NULL,
   `lugar_nac` varchar(45) NOT NULL,
   PRIMARY KEY (`idpaciente`)
-) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -75,7 +75,7 @@ CREATE TABLE `pacientes` (
 
 LOCK TABLES `pacientes` WRITE;
 /*!40000 ALTER TABLE `pacientes` DISABLE KEYS */;
-INSERT INTO `pacientes` VALUES (24,'daniel','de avila','cedula','12248489','2022-08-09','barranquilla'),(26,'jorge','peñate','cedula','12248489','2022-08-09','soledad'),(27,'carlos','guerra','tarjeta de identidad','102518541','2022-08-09','baranoa'),(31,'andrea','caballero','cedula','12248489','2022-08-09','prueba'),(32,'monica','orozco','cedula','12248489','02/02/1988','barranquilla'),(33,'juliana','lopez guzman','cedula','12248489','2022-08-09','barranquilla'),(34,'federico','gutierrez','cedula','120515151','2022-08-11','bogota'),(35,'gustavo','petro','cedula','120201515','2022-08-11','bogota'),(36,'teofilo','gutierrez','tarjeta de identidad','15125155','2022-08-11','barranquilla'),(37,'gabriela','pardo','cedula','15150515','2022-08-11','soledad');
+INSERT INTO `pacientes` VALUES (24,'daniel','de avila','cedula','12248489','2022-08-09','barranquilla'),(26,'jorge','peñate','cedula','12248489','2022-08-09','soledad'),(27,'carlos','guerra','tarjeta de identidad','102518541','2022-08-09','baranoa'),(31,'andrea','caballero','cedula','12248489','2022-08-09','prueba'),(32,'monica','orozco','cedula','12248489','02/02/1988','barranquilla'),(33,'juliana','guzman','cedula','12248489','2022-08-09','barranquilla'),(34,'federico','gutierrez','cedula','120515151','2022-08-11','bogota'),(35,'gustavo','petro','cedula','120201515','2022-08-11','bogota'),(36,'teofilo','gutierrez','tarjeta de identidad','15125155','2022-08-11','barranquilla');
 /*!40000 ALTER TABLE `pacientes` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -88,4 +88,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-08-11  1:34:54
+-- Dump completed on 2022-08-22 23:09:58

@@ -13,9 +13,9 @@ const HistorialCitas = () => {
     const {contextData} = useContext(FindByIdPaciente);
 
     // endpoint para obtener todos los datos
-    const getPacienteUrl = `http://localhost:9000/ipsbarranquilla/pacientes/${contextData.idpaciente}`;
+    const getPacienteUrl = `http://localhost:9000/ipsbarranquilla/pacientes/${contextData.idpaciente.idpaciente}`;
 
-    const getAllCitas = `http://localhost:9000/ipsbarranquilla/citas/${contextData.idpaciente}`
+    const getAllCitas = `http://localhost:9000/ipsbarranquilla/citas/${contextData.idpaciente.idpaciente}`
 
 
   // USAMOS EL HOOK USESTATE PARA TRAER LA DATA Y REALIZAR LAS DIFERENTES OPERACIONES EN EL FRONT

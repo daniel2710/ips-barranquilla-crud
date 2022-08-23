@@ -94,7 +94,7 @@ routes.get('/citas', (req, res)=>{
     })
 })
 
-// Obtener paciente por ID
+// Obtener paciente con cita por ID
 routes.get('/citas/:id', (req, res)=>{
     req.getConnection((err, conn)=>{
         if(err) return res.send(err)
